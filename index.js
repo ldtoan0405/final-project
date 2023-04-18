@@ -28,7 +28,7 @@ const shop = new Sprite({
 
 const player = new Fighter({
   position: {
-    x: 0,
+    x: 50,
     y: 0
   },
   velocity: {
@@ -39,41 +39,41 @@ const player = new Fighter({
     x: 0,
     y: 0
   },
-  imageSrc: './img/knight/Idle.png',
+  imageSrc: './img/knight/CowBoyIdle.png',
   framesMax: 8,
   scale: 2.5,
   offset: {
-    x: 215,
-    y: 135
+    x: 90,
+    y: -30
   },
   sprites: {
     idle: {
-      imageSrc: './img/knight/Idle.png',
-      framesMax: 11
+      imageSrc: './img/knight/CowBoyIdle.png',
+      framesMax: 7
     },
     run: {
-      imageSrc: './img/knight/Run.png',
+      imageSrc: './img/knight/CowBoyWalking.png',
       framesMax: 8
     },
     jump: {
-      imageSrc: './img/knight/Jump.png',
-      framesMax: 3
+      imageSrc: './img/knight/CowBoyIdle.png',
+      framesMax: 7
     },
     fall: {
-      imageSrc: './img/knight/Fall.png',
-      framesMax: 3
+      imageSrc: './img/knight/CowBoyIdle.png',
+      framesMax: 7
     },
     attack1: {
-      imageSrc: './img/knight/Attack1.png',
-      framesMax: 7
+      imageSrc: './img/knight/CowBoyShoot.png',
+      framesMax: 5
     },
     takeHit: {
       imageSrc: './img/knight/Take Hit.png',
       framesMax: 4
     },
     death: {
-      imageSrc: './img/knight/Death.png',
-      framesMax: 11
+      imageSrc: './img/knight/CowBoyIdle.png',
+      framesMax: 7
     }
   },
   attackBox: {
@@ -81,14 +81,14 @@ const player = new Fighter({
       x: 100,
       y: 50
     },
-    width: 160,
+    width: 1000,
     height: 50
   }
 })
 
 const enemy = new Fighter({
   position: {
-    x: 400,
+    x: 1000,
     y: 100
   },
   velocity: {
@@ -100,49 +100,49 @@ const enemy = new Fighter({
     x: -50,
     y: 0
   },
-  imageSrc: './img/king/Idle.png',
-  framesMax: 4,
+  imageSrc: './img/king/CowBoyIdle.png',
+  framesMax: 8,
   scale: 2.5,
   offset: {
     x: 215,
-    y: 113
+    y: -30
   },
   sprites: {
     idle: {
-      imageSrc: './img/king/Idle.png',
-      framesMax: 8
+      imageSrc: './img/king/CowBoyIdle.png',
+      framesMax: 7
     },
     run: {
-      imageSrc: './img/king/Run.png',
+      imageSrc: './img/king/CowBoyWalking.png',
       framesMax: 8
     },
     jump: {
-      imageSrc: './img/king/Jump.png',
-      framesMax: 2
+      imageSrc: './img/king/CowBoyIdle.png',
+      framesMax: 7
     },
     fall: {
-      imageSrc: './img/king/Fall.png',
-      framesMax: 2
+      imageSrc: './img/king/CowBoyIdle.png',
+      framesMax: 7
     },
     attack1: {
-      imageSrc: './img/king/Attack1.png',
-      framesMax: 4
+      imageSrc: './img/king/CowBoyShoot.png',
+      framesMax: 5
     },
     takeHit: {
       imageSrc: './img/king/Take hit.png',
       framesMax: 4
     },
     death: {
-      imageSrc: './img/king/Death.png',
-      framesMax: 6
+      imageSrc: './img/king/CowBoyIdle.png',
+      framesMax: 7
     }
   },
   attackBox: {
     offset: {
-      x: -170,
+      x: -1000,
       y: 50
     },
-    width: 170,
+    width: 1000,
     height: 50
   }
 })
